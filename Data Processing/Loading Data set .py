@@ -22,7 +22,7 @@ from sklearn.impute import SimpleImputer
 imputer = SimpleImputer(missing_values = np.nan, strategy = 'mean')
 imputer.fit(x[:, 1:3]) #x[All Rows, 1 to 3 coloumes]
 x[:, 1:3] = imputer.transform(x[:, 1:3])
-print(x)
+print("\n Updated Values: \n",x)
 
 '''In this program first i have imported panda and numpys and then imported the 
 Dataset Which is in the form of CSV and then 
