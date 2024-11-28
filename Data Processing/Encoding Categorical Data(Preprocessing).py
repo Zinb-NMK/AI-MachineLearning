@@ -45,4 +45,4 @@ print("\nAfter Encoding Dependent Variable: \n",y)
 2. we imported sklearn.preprocessing import OneHotEncoder.
 3. First By using encoder and OneHotEncoder. We Encoded country names as 0.0 & 1.0 (as in output).  
 4. Then we encoder labelEncoder to encode the Yes and No As "0 & 1" as in output and the output will be in Array .
-5. '''
+ '''
