@@ -38,7 +38,7 @@ print(classifier.predict(sc.transform([[20, 86000]]))[0])
 y_pred = classifier.predict(x_test)
 print(y_pred)
 
-#Gives [Predicted Values " " Original Values]
+'''#Gives [Predicted Values " " Original Values]'''
 print(f"\nThe Predicted Values - Original Values of(Y_Pred, Y_Test):")
 print(np.concatenate((y_pred.reshape(len(y_pred), 1), y_test.reshape(len(y_test), 1)), 1))
 
