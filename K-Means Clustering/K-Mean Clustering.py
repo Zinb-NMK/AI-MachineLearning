@@ -1,6 +1,8 @@
 # import Libraries.
 import numpy as np
 import pandas as pd
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
 
 # Load DataSet
 dataset = pd.read_csv('Mall_Customers.csv')
@@ -10,7 +12,6 @@ y = dataset.iloc[:, -1].values
 print(x)
 
 # ELBOW METHOD
-from sklearn.cluster import KMeans
 wcss = []
 for i in range(2, 51):  # For cluster, it should be minimum 2. so we stated with 2.
     kmeans = KMeans(n_clusters=i, random_state=42)
@@ -19,7 +20,6 @@ for i in range(2, 51):  # For cluster, it should be minimum 2. so we stated with
 print(wcss)
 
 # Matplotlib is used to plot the graph. It forms an elbow like structure.
-import matplotlib.pyplot as plt
 plt.plot(range(2, 51), wcss)
 print(plt.show())  # Shows the graph
 kmeans = KMeans(n_clusters=5, init="k-means++", random_state=42)
