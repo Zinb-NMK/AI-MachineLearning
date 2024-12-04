@@ -45,7 +45,8 @@ dataset['text'] = dataset['text'].apply(clean_row)
 vectorizer = TfidfVectorizer(max_features=50000, lowercase=False, ngram_range=(1, 2))
 x = dataset['text']
 y = dataset['label']
-
+'''print(f"\nNo of Rows, No of Columns: \n{dataset.shape}\n")
+print(f"\nCheck for Null Values in Dataset: \n{dataset.isnull().sum()}\n")'''
 # Split the data into training and testing sets
 train_data, test_data, train_label, test_label = train_test_split(x, y, test_size=0.2, random_state=0)
 
