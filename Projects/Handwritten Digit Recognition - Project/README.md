@@ -29,6 +29,8 @@ Split the data into training, validation, and test sets.
 Compile and train the model.
 Evaluate the Model: Test the model on the test set to measure performance.
 
+OUTPUT:
+  <a href src="https://github.com/Zinb-NMK/AI-MachineLearning/blob/NMK/Projects/Handwritten%20Digit%20Recognition%20-%20Project/OutPut.png?raw=true">Output</a>
 
 📊 Conclusion
 The CNN model achieves high accuracy in classifying handwritten digits from the MNIST dataset. 
