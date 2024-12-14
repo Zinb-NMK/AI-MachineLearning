@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Model Evaluation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Breast Cancer Model Evaluation</h1>
+        <div class="buttons">
+            <button onclick="showPlot('diagnosis_count_plot')">Show Diagnosis Count Plot</button>
+            <button onclick="showPlot('correlation_heatmap')">Show Correlation Heatmap</button>
+            <button onclick="evaluateModel('evaluate_rf')">Evaluate Random Forest</button>
+            <button onclick="evaluateModel('evaluate_models')">Evaluate Multiple Models</button>
+        </div>
+
+        <div id="output">
+            <h2>Results will be displayed here</h2>
+        </div>
+    </div>
+
+    <script>
+        function showPlot(route) {
+            fetch(`/${route}`)
+                .then(response => response.blob())
+                .then(image => {
+                    const imgElement = document.createElement('img');
+                    imgElement.src = URL.createObjectURL(image);
+                    const outputDiv = document.getElementById('output');
+                    outputDiv.innerHTML = '';
+                    outputDiv.appendChild(imgElement);
+                });
+        }
+
+        function evaluateModel(route) {
+            fetch(`/${route}`)
+                .then(response => response.json())
+                .then(data => {
+                    const outputDiv = document.getElementById('output');
+                    outputDiv.innerHTML = '<ul>';
+                    if (Array.isArray(data)) {
+                        data.forEach(result => {
+                            outputDiv.innerHTML += `<li>${result.model} Accuracy: ${result.accuracy}</li>`;
+                        });
+                    } else {
+                        outputDiv.innerHTML += `<li>${data.model} Accuracy: ${data.accuracy}</li>`;
+                    }
+                    outputDiv.innerHTML += '</ul>';
+                });
+        }
+    </script>
+</body>
+</html>
