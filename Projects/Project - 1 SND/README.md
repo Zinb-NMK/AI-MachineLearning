@@ -21,7 +21,7 @@ I'm an aspiring **developer** and **AI/ML enthusiast** currently pursuing a **B.
 
 ## 🔗 Connect with Me
 - **LinkedIn**: [Nagaram ManojKumar](linkedin.com/in/manojkumar-nagaram-1a2236321)
-- **Email**: [nagarammanojkumar3@gmail.com]
+- **Email**: [Mail](nagarammanojkumar3@gmail.com)
 - **GitHub**: [NagaramManojKumar](https://github.com/Zinb-NMK)
 
 ---
