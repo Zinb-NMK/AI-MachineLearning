@@ -16,20 +16,13 @@ I'm an aspiring **developer** and **AI/ML enthusiast** currently pursuing a **B.
 - **Databases**: MySQL, MongoDB  
 - **Tools**: Git, Docker, VS Code, Jupyter  
 
----
 
-## 🌟 My GitHub Stats
-![Nagaram's GitHub stats](https://github-readme-stats.vercel.app/api?username=NagaramManojKumar&show_icons=true&theme=radical)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=NagaramManojKumar&layout=compact&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
-
----
 
 ## 🔗 Connect with Me
-- **LinkedIn**: [Nagaram ManojKumar](https://linkedin.com/in/nagaram-manoj-kumar)
-- **Portfolio**: [Your Portfolio URL](#)
+- **LinkedIn**: [Nagaram ManojKumar](linkedin.com/in/manojkumar-nagaram-1a2236321)
 - **Email**: [nagarammanojkumar3@gmail.com]
-- **GitHub**: [NagaramManojKumar](https://github.com/NagaramManojKumar)
+- **GitHub**: [NagaramManojKumar](https://github.com/Zinb-NMK)
 
 ---
 
