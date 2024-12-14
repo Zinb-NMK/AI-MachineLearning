@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam News Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Spam News Detection</h1>
+    <h2>Steps to Detect Fake News:</h2>
+    <ul>
+        {% for step in steps %}
+        <li>{{ step }}</li>
+        {% endfor %}
+    </ul>
+    <form action="/predict" method="POST">
+        <label for="news">Enter News for Prediction:</label><br>
+        <textarea id="news" name="news" rows="5" cols="40"></textarea><br>
+        <button type="submit">Check News</button>
+    </form>
+    {% if result %}
+    <h2>Prediction Result:</h2>
+    <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
